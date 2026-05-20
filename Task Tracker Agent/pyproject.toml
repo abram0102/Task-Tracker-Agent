@@ -1,0 +1,18 @@
+[project]
+name = "task-tracker-agent"
+version = "0.1.0"
+description = "A Mac desktop task tracker agent that parses natural language tasks with OpenAI."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.0.0",
+  "pyside6>=6.7.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+task-tracker-agent = "task_tracker_agent.app:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
